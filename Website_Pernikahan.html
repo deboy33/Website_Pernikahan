@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Undangan Pernikahan</h1>
+            <p>Dengan penuh rasa syukur dan sukacita, kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
+        </header>
+
+        <section class="details">
+            <h2>Detail Acara</h2>
+            <p><strong>Tanggal:</strong> 1 Januari 2025</p>
+            <p><strong>Waktu:</strong> 10:00 AM</p>
+            <p><strong>Tempat:</strong> Gedung Serbaguna</p>
+            <a href="https://maps.google.com/?q=Gedung+Serbaguna" target="_blank">Lihat Lokasi di Google Maps</a>
+        </section>
+
+        <section class="rsvp">
+            <h2>Konfirmasi Kehadiran</h2>
+            <form id="rsvp-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="attendance">Kehadiran:</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="hadir">Hadir</option>
+                    <option value="tidak_hadir">Tidak Hadir</option>
+                </select>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="main_1.js"></script>
+</body>
+</html>
